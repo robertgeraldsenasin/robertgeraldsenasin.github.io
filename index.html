@@ -201,6 +201,7 @@ main:focus{outline:none}
 .case::before{content:"";position:absolute;inset:0 auto 0 0;width:1.9rem;background:var(--gold);clip-path:polygon(1.3rem 0,1.9rem 0,.6rem 100%,0 100%)}
 .case:nth-child(2){margin-left:2.2rem}
 .case:nth-child(3){margin-left:4.4rem}
+.case:nth-child(4){margin-left:6.6rem}
 .case:hover,.case:focus-within{background:var(--surface-2)}
 .case h3{grid-column:1;font:400 clamp(1.5rem,3.4vw,2.1rem)/1.05 var(--display);text-transform:uppercase;letter-spacing:.015em;margin:.35rem 0 .2rem}
 .case h3.long{font-size:clamp(1.2rem,2.5vw,1.5rem);line-height:1.15}
@@ -334,7 +335,7 @@ dialog .close{font:700 1rem/1 var(--body);background:var(--gold);color:var(--on-
   .nav li:nth-child(2){margin-left:1rem}.nav li:nth-child(3){margin-left:2rem}
   .nav li:nth-child(4){margin-left:3rem}.nav li:nth-child(5){margin-left:4rem}
   .nav a{display:inline-block;font-size:1.5rem;padding:.5rem 1.1rem}
-  .case:nth-child(2),.case:nth-child(3){margin-left:0}
+  .case:nth-child(2),.case:nth-child(3),.case:nth-child(4){margin-left:0}
 }
 @media (max-width: 900px){
   .hero-grid{grid-template-columns:1fr}
@@ -760,11 +761,12 @@ a.lm-dot:focus-visible .lm-ring{opacity:1}
     </div>
 
     <div class="now">
-      <div class="date-chip" aria-hidden="true"><span class="m">Nov</span><span class="d">16</span><span class="y">2026</span></div>
+      <div class="date-chip" aria-hidden="true"><span class="m">Nov</span><span class="d">17</span><span class="y">2026</span></div>
       <div>
-        <h2>Right now <span class="sr-only">(updated November 16, 2026)</span></h2>
+        <h2>Right now <span class="sr-only">(updated November 17, 2026)</span></h2>
         <ul>
           <li>Just back from CS Expo 2026, where M.I.N.E.R.V.A. won Most Innovative, 3rd Place.</li>
+          <li>Whyfinder’s first milestone is live: a game recommender that runs in your browser and shows exactly why it picked each game.</li>
           <li>Hasik is public: play it in your browser, with move previews and hints, or read the code on GitHub.</li>
           <li>My Text-to-SQL paper is under review at IJACSA.</li>
           <li>Taking the GitHub Foundations exam in mid-November and preparing for two Oracle AI exams.</li>
@@ -797,6 +799,13 @@ a.lm-dot:focus-visible .lm-ring{opacity:1}
         <span class="stamp">Live demo</span>
         <a class="go" href="#hasik">Read the case study<span class="sr-only">: Hasik</span></a>
       </li>
+      <li class="case" style="--i:3">
+        <ul class="lanes" aria-label="Areas"><li class="lane lane-swe"><span>Software</span></li><li class="lane lane-ai"><span>AI</span></li></ul>
+        <h3>Whyfinder</h3>
+        <p>Find your next game and know why. A Steam game recommender whose every reason is an exact share of the score, running live in your browser.</p>
+        <span class="stamp">Live demo</span>
+        <a class="go" href="#whyfinder">Read the case study<span class="sr-only">: Whyfinder</span></a>
+      </li>
     </ul>
   </div>
 
@@ -819,7 +828,7 @@ a.lm-dot:focus-visible .lm-ring{opacity:1}
     <div class="work-head">
       <div>
         <h1 class="tab" id="work-title" tabindex="-1" data-anim>Work</h1>
-        <p class="lede">Two research papers, an engine project with its first milestone done, and what I’m building next. Planned projects show their dates; each gets a full write-up once it ships.</p>
+        <p class="lede">Two research papers, two live projects, and what I’m building next. Planned projects show their dates; each gets a full write-up once it ships.</p>
         <p class="muted" style="margin:0">The map shows where each project sits across my three areas. The tags under each entry use the same colors.</p>
       </div>
       <figure class="lanemap" data-anim>
@@ -836,6 +845,7 @@ a.lm-dot:focus-visible .lm-ring{opacity:1}
           <a class="lm-dot" href="#text-to-sql" style="--d:0" aria-label="Text-to-SQL paper: applied AI and software"><circle class="lm-ring" cx="280" cy="92" r="16"/><circle class="lm-pt" cx="280" cy="92" r="9"/><text x="280" y="70" text-anchor="middle">Text-to-SQL</text></a>
           <g class="lm-dot planned" style="--d:1"><title>Byahe: software and applied AI, planned</title><circle class="lm-pt" cx="280" cy="142" r="8"/><text x="296" y="149">Byahe</text></g>
           <a class="lm-dot" href="#minerva" style="--d:2" aria-label="M.I.N.E.R.V.A.: software, applied AI and games"><circle class="lm-ring" cx="280" cy="216" r="16"/><circle class="lm-pt" cx="280" cy="216" r="9"/><text x="280" y="197" text-anchor="middle">M.I.N.E.R.V.A.</text></a>
+          <a class="lm-dot" href="#whyfinder" style="--d:3" aria-label="Whyfinder: software and applied AI"><circle class="lm-ring" cx="240" cy="160" r="16"/><circle class="lm-pt" cx="240" cy="160" r="9"/><text x="218" y="167" text-anchor="end">Whyfinder</text></a>
           <a class="lm-dot" href="#hasik" style="--d:3" aria-label="Hasik: software, applied AI and games"><circle class="lm-ring" cx="280" cy="258" r="16"/><circle class="lm-pt" cx="280" cy="258" r="9"/><text x="280" y="291" text-anchor="middle">Hasik</text></a>
           <g class="lm-dot planned" style="--d:4"><title>Bantay: applied AI and games, planned</title><circle class="lm-pt" cx="372" cy="324" r="8"/><text x="388" y="331">Bantay</text></g>
           <g class="lm-dot" style="--d:5"><title>ACMX: software</title><circle class="lm-pt" cx="118" cy="196" r="9"/><text x="134" y="203">ACMX</text></g>
@@ -875,8 +885,16 @@ a.lm-dot:focus-visible .lm-ring{opacity:1}
         <ul class="links"><li><a class="text-link" href="#hasik">Case study</a></li><li><a class="text-link" href="https://github.com/robertgeraldsenasin/hasik">Repository</a></li><li><a class="text-link" href="https://robertgeraldsenasin.github.io/hasik/">Play it</a></li></ul>
       </article>
       <article class="entry" data-anim>
+        <h3>Whyfinder</h3>
+        <dl class="meta"><div><dt>Year</dt><dd>2026–2027</dd></div><div><dt>Type</dt><dd>Personal project</dd></div><div><dt>Stack</dt><dd>Python, TypeScript, Svelte, GitHub Actions</dd></div></dl>
+        <ul class="lanes" aria-label="Areas"><li class="lane lane-swe"><span>Software</span></li><li class="lane lane-ai"><span>AI</span></li></ul>
+        <span class="stamp">Live demo</span>
+        <p>An explainable Steam game recommender. A glass-box blend of two item-to-item models makes every reason an exact share of the score, names the games you’d have to remove for a pick to drop out, and keeps the list varied. The same engine runs in Python and in your browser, and CI checks that they agree.</p>
+        <ul class="links"><li><a class="text-link" href="#whyfinder">Case study</a></li><li><a class="text-link" href="https://github.com/robertgeraldsenasin/whyfinder">Repository</a></li><li><a class="text-link" href="https://robertgeraldsenasin.github.io/whyfinder/">Try the demo</a></li></ul>
+      </article>
+      <article class="entry" data-anim>
         <h3>Byahe: Metro Manila Live Dispatch</h3>
-        <dl class="meta"><div><dt>When</dt><dd>Nov 17–21, 2026</dd></div><div><dt>Type</dt><dd>Personal project</dd></div></dl>
+        <dl class="meta"><div><dt>When</dt><dd>Early 2027</dd></div><div><dt>Type</dt><dd>Personal project</dd></div></dl>
         <ul class="lanes" aria-label="Areas"><li class="lane lane-swe"><span>Software</span></li><li class="lane lane-ai"><span>AI</span></li></ul>
         <span class="stamp quiet">Planned</span>
         <p>A delivery dispatch simulator on the real Metro Manila road network. Contraction Hierarchies handle fast routing and Adaptive Large Neighborhood Search plans vehicle routes with time windows, all on a live animated map. CI gates check routing correctness and solution quality on every change.</p>
@@ -1160,6 +1178,75 @@ a.lm-dot:focus-visible .lm-ring{opacity:1}
 
     <nav class="next-case" aria-label="More case studies">
       <a href="#text-to-sql"><small>Previous case study</small><b>Text-to-SQL error propagation</b></a>
+      <a href="#whyfinder"><small>Next case study</small><b>Whyfinder</b></a>
+    </nav>
+  </div>
+</article>
+
+<!-- ======================= WHYFINDER ======================= -->
+<article class="view" data-view="whyfinder" aria-labelledby="whyfinder-title" hidden>
+  <header class="page-head" data-anim>
+    <div class="prose">
+      <a class="back" href="#work">Back to all work</a>
+      <div class="inner">
+        <div>
+          <h1 class="page-title" id="whyfinder-title" tabindex="-1">Whyfinder</h1>
+          <p class="subtitle">Find your next game. Know why. A Steam game recommender whose reasons are the model’s actual reasons, computed exactly and checked by CI.</p>
+        </div>
+        <span class="stamp" style="font-size:1.15rem">Live demo</span>
+      </div>
+    </div>
+  </header>
+
+  <div class="prose article">
+    <dl class="facts">
+      <dt>Year</dt><dd>2026–2027, personal project</dd>
+      <dt>Status</dt><dd>First milestone (foundation) complete Nov 17, 2026; v1.0 planned for Jan 24, 2027</dd>
+      <dt>Stack</dt><dd>Python, TypeScript, Svelte, DVC, GitHub Actions</dd>
+      <dt>Tests</dt><dd>153 passing: 125 in Python, 12 that check the browser engine against Python, 16 end to end</dd>
+      <dt>Code and demo</dt><dd>Public</dd>
+    </dl>
+    <ul class="btn-row" style="margin:1.4rem 0 .5rem"><li><a class="btn btn-gold" href="https://github.com/robertgeraldsenasin/whyfinder">View the repository</a></li><li><a class="btn" href="https://robertgeraldsenasin.github.io/whyfinder/">Try the demo</a></li></ul>
+
+    <h2 class="h2">The idea</h2>
+    <p>When a recommender says “because you played X,” that reason is usually a guess written after the fact, and an LLM-written explanation can sound convincing while having nothing to do with why the item was picked. I wanted a recommender whose explanations are exact: every share it shows is the model’s real arithmetic, and CI proves each change keeps it that way.</p>
+
+    <h2 class="h2">How it works</h2>
+    <ol class="steps" data-anim>
+      <li style="--i:0"><strong>Score.</strong> Two item-to-item models, EASE<sup>R</sup> (a closed-form linear autoencoder) and Personalized PageRank over a graph of games, tags and developers, blend into one matrix. A game’s score is a sum over the games you like.</li>
+      <li style="--i:1"><strong>Explain.</strong> Because the score is a sum, “42% from Dead Cells” is exact, not estimated. Removing games and re-running the whole pipeline finds a set of your games without which a pick drops out.</li>
+      <li style="--i:2"><strong>Vary.</strong> A determinantal point process re-ranks the top 100 so the final 10 aren’t ten copies of one game, and picks kept for variety say so.</li>
+      <li style="--i:3"><strong>Check.</strong> Every algorithm is tested against an independent reference: a numerical inverse, power iteration, brute-force determinants.</li>
+    </ol>
+
+    <h2 class="h2">The engine runs twice</h2>
+    <p>The Python code is the source of truth. For the demo, I wrote the same algorithms again in TypeScript so they run live in your browser on the 500 most-played games, in a background thread so the animations stay smooth. A golden test makes CI fail if the two ever disagree: same picks, same reasons, same counterfactuals, scores within one part in a billion. The demo’s “Under the hood” view replays the real computation on your own picks, step by step.</p>
+
+    <h2 class="h2">The data</h2>
+    <p>Steam reviews from the UCSD McAuley Lab, downloaded and checked by script on GitHub’s servers and never committed. Every count below comes from the pipeline’s own record.</p>
+    <figure class="chart">
+      <figcaption>From raw reviews to the training set<span class="sub">Duplicates removed, then only users and games with at least five interactions, then everything before the time cut-off.</span></figcaption>
+      <dl class="bars" data-anim>
+        <dt>Reviews parsed</dt><dd><span class="bar" style="--k:1"></span><b>7,793,069</b></dd>
+        <dt>Unique player–game pairs</dt><dd><span class="bar" style="--k:.8841"></span><b>6,889,728</b></dd>
+        <dt>After the 5-core filter</dt><dd><span class="bar" style="--k:.4472"></span><b>3,484,694</b></dd>
+        <dt>Training set (before May 31, 2017)</dt><dd><span class="bar hot" style="--k:.3577"></span><b>2,787,177</b></dd>
+      </dl>
+    </figure>
+    <div class="results three" data-anim>
+      <div class="result"><b><span aria-hidden="true" data-count="0">0</span><span class="sr-only">0</span></b><span>Malformed lines among 7.8 million.</span></div>
+      <div class="result"><b><span aria-hidden="true" data-count="100" data-suffix="%">100%</span><span class="sr-only">100 percent</span></b><span>Of reviews carry a date, so the test set can be the future, not a random slice.</span></div>
+      <div class="result"><b><span aria-hidden="true" data-count="12">12</span><span class="sr-only">12</span></b><span>Golden checks that the browser engine reproduces the Python one.</span></div>
+    </div>
+
+    <h2 class="h2">What isn’t proven yet</h2>
+    <p>No accuracy numbers yet: the evaluation and the statistical gate arrive with the next milestone, and I won’t quote a number before it can be checked. The demo already shows two things to tune: picks lean toward very popular games, and the graph model keeps only its top 200 neighbours per game, which drops about 44% of each row’s weight.</p>
+
+    <h2 class="h2">Next</h2>
+    <p>Milestone 1 builds the full 8,000-game model, adds a latent-factor rival the glass-box blend has to match, and turns on a quality gate that compares every pull request with the main branch using bootstrap confidence intervals. Later milestones add grounded explanations in words, where a local LLM may only say what the model computed and a checker rejects anything it can’t verify, and an API.</p>
+
+    <nav class="next-case" aria-label="More case studies">
+      <a href="#hasik"><small>Previous case study</small><b>Hasik</b></a>
       <a href="#minerva"><small>Back to the first case study</small><b>M.I.N.E.R.V.A.</b></a>
     </nav>
   </div>
@@ -1302,7 +1389,7 @@ a.lm-dot:focus-visible .lm-ring{opacity:1}
 
 <footer class="foot">
   <div class="wrap">
-    <p>Robert Gerald Senasin (RGS). Last updated Nov 16, 2026.</p>
+    <p>Robert Gerald Senasin (RGS). Last updated Nov 17, 2026.</p>
     <ul>
       <li><a href="mailto:robertgeraldsenasin@gmail.com">Email</a></li>
       <li><a href="https://www.linkedin.com/in/rga-senasin" rel="me">LinkedIn</a></li>
@@ -1321,19 +1408,20 @@ a.lm-dot:focus-visible .lm-ring{opacity:1}
 
 <script>
 (function(){
-  var VIEWS = ["home","work","minerva","text-to-sql","hasik","about","credentials","resume","contact"];
+  var VIEWS = ["home","work","minerva","text-to-sql","hasik","whyfinder","about","credentials","resume","contact"];
   var TITLES = {
     home:"Robert Gerald Senasin – Software, applied AI and games",
     work:"Work – Robert Gerald Senasin",
     minerva:"M.I.N.E.R.V.A. – Robert Gerald Senasin",
     "text-to-sql":"Text-to-SQL error propagation – Robert Gerald Senasin",
     hasik:"Hasik – Robert Gerald Senasin",
+    whyfinder:"Whyfinder – Robert Gerald Senasin",
     about:"About – Robert Gerald Senasin",
     credentials:"Credentials – Robert Gerald Senasin",
     resume:"Resume – Robert Gerald Senasin",
     contact:"Contact – Robert Gerald Senasin"
   };
-  var NAV_FOR = {minerva:"work","text-to-sql":"work",hasik:"work"};
+  var NAV_FOR = {minerva:"work","text-to-sql":"work",hasik:"work",whyfinder:"work"};
   var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   var sweep = document.querySelector(".sweep");
   var menuBtn = document.querySelector(".menu-btn"), nav = document.getElementById("site-nav");
